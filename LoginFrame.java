@@ -55,7 +55,7 @@ public class LoginFrame extends JFrame {
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
             Graphics2D g2d = (Graphics2D) g.create();
-            String watermark = "天才邵立翔製作";
+            String watermark = "邵立翔製作";
             g2d.setFont(new Font("微軟正黑體", Font.BOLD, 14));
             FontMetrics fm = g2d.getFontMetrics();
 
