@@ -45,11 +45,11 @@ public class LoginFrame extends JFrame {
         panel.add(loginButton);
 
         add(panel);
-        setLocationRelativeTo(null); 
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 
-    
+
     class WatermarkPanel extends JPanel {
         @Override
         protected void paintComponent(Graphics g) {
@@ -62,10 +62,10 @@ public class LoginFrame extends JFrame {
             int textWidth = fm.stringWidth(watermark);
             int textHeight = fm.getHeight();
 
-            int x = getWidth() - textWidth - 10; 
-            int y = getHeight() - 10;            
+            int x = getWidth() - textWidth - 10;
+            int y = getHeight() - 10;
 
-            g2d.setColor(new Color(0, 0, 0, 180)); 
+            g2d.setColor(new Color(0, 0, 0, 180));
             g2d.drawString(watermark, x, y);
             g2d.dispose();
         }
